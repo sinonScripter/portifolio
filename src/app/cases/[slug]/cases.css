@@ -1,0 +1,38 @@
+.cases {
+  width: 100%;
+}
+
+/* Intro */
+.cases-intro {
+  padding: 180px 80px 120px;
+}
+
+.cases-intro h1 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.cases-intro p {
+  max-width: 420px;
+  font-size: 0.95rem;
+  opacity: 0.65;
+}
+
+/* Lista */
+.cases-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .cases-intro {
+    padding: 140px 24px 80px;
+  }
+
+  .cases-intro h1 {
+    font-size: 1.8rem;
+  }
+}

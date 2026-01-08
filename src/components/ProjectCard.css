@@ -1,0 +1,77 @@
+.project-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-card {
+  position: relative;
+  padding: 180px 80px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: opacity 0.25s ease;
+}
+
+/* Linha animada */
+.project-card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 0%;
+  background: currentColor;
+  transition: width 0.4s ease;
+}
+
+/* Conteúdo */
+.project-content h2 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.project-content p {
+  max-width: 520px;
+  font-size: 1.05rem;
+}
+
+/* Seta */
+.project-arrow {
+  font-size: 2.5rem;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* 💻 Hover só desktop */
+@media (hover: hover) and (pointer: fine) {
+  .project-card:hover {
+    opacity: 0.85;
+  }
+
+  .project-card:hover::after {
+    width: 100%;
+  }
+
+  .project-card:hover .project-arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+  .project-card {
+    padding: 100px 24px;
+  }
+
+  .project-arrow {
+    display: none;
+  }
+
+  .project-content h2 {
+    font-size: 2.2rem;
+  }
+}
