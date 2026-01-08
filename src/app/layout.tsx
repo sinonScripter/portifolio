@@ -17,8 +17,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={inter.className}>
-        {/* Cursor customizado (desktop only) */}
-        <CustomCursor />
+     
 
         <Header />
         {children}

@@ -1,9 +1,12 @@
 import "./home.css";
-
+import RightClickLove from "../components/RightClickLove";
 
 export default function Home() {
+  
   return (
     <main className="home">
+
+      {/* ===== HERO ===== */}
       <section className="hero">
         <div className="hero-text">
           <h1>
@@ -14,57 +17,91 @@ export default function Home() {
           <p>
             I design and build interfaces focused on clarity, performance and
             human-centered interaction.
-             
           </p>
         </div>
+
         <div className="hero-media">
           <img src="/hero.gif" alt="Visual motion" />
         </div>
       </section>
 
-      {/* ===== QUADRADOS ===== */}
-      <section className="squares-section">
-        <div className="squares-container">
+      {/* ===== PROJECTS ===== */}
+      <section className="projects-section">
+        <div className="projects-grid">
 
-
-        <div className="square-item">
-            <div className="square">
-            <img src="/assets/Screenshot_1.png" alt="Design de interfaces" />
-            </div>
-            <h3 className="projetc-title">Vyver</h3>
-            <button>Estudo do Caso</button>
+          {/* Vyver */}
+          <div className="project-card">
+            <div className="project-media">
+              <img src="/assets/Screenshot_1.png" alt="Vyver App" />
             </div>
 
-            <div className="square-item">
-            <div className="square">
-            <img src="/assets/Screenshot_4.png" alt="Design de interfaces" />
+            <div className="project-content">
+              <h3 className="project-title">Vyver</h3>
+              <span className="project-meta">Vyver · Shipped · 2024</span>
+              <p className="project-description">
+                Atuei no design e desenvolvimento de interfaces mobile, criando
+                fluxos e componentes focados na experiência do usuário.
+              </p>
             </div>
-            <h3 className="projetc-title">Porto APP</h3>
+          </div>
 
-            <p>Design de interfaces</p>
+          {/* Porto APP */}
+          <div className="project-card">
+            <div className="project-media">
+              <img src="/assets/Screenshot_4.png" alt="Porto App" />
+              <span className="lock-badge">🔒</span>
             </div>
 
-            <div className="square-item">
-            <div className="square">
-            <img src="/assets/Screenshot_6.png" alt="Design de interfaces" />
+            <div className="project-content">
+              <h3 className="project-title">Porto APP</h3>
+              <span className="project-meta">
+                Porto Seguro · Private · 2023
+              </span>
+              <p className="project-description">
+                  Atuei no sistema interno Toaki Web, resolvendo chamados técnicos e
+                  implementando melhorias e novas funcionalidades para suporte operacion
+              </p>
             </div>
-            <h3 className="projetc-title">ANB CLUB</h3>
-            
-            <p>Design de interfaces</p>
+          </div>
+
+          {/* ANB Club */}
+          <div className="project-card">
+            <div className="project-media">
+              <img src="/assets/Screenshot_6.png" alt="ANB Club" />
+              <span className="lock-badge">🔒</span>
             </div>
 
-                    
-            <div className="square-item">
-            <div className="square">
-            <img src="/assets/Screenshot_7.png" alt="Design de interfaces" />
+            <div className="project-content">
+              <h3 className="project-title">ANB Club</h3>
+              <span className="project-meta">ANB · Private · 2024</span>
+              <p className="project-description">
+                Refatorei todo o frontend do site, reorganizando a base de código e
+                melhorando performance, manutenção e consistência visual da aplicação.
+              </p>
             </div>
-            <h3 className="projetc-title">Scooby Doo Cade Voce</h3>
+          </div>
 
-            <p>Design de interfaces</p>
+          {/* Scooby Doo */}
+          <div className="project-card">
+            <div className="project-media">
+              <img src="/assets/Screenshot_7.png" alt="Scooby Doo Cadê Você" />
             </div>
+
+            <div className="project-content">
+              <h3 className="project-title">Scooby Doo Cadê Você</h3>
+              <span className="project-meta">
+                Projeto Voluntario · Concept · 2024
+              </span>
+              <p className="project-description">
+                 Projeto voluntário criado para ajudar vítimas do Rio Grande do Sul a
+                 localizar e reencontrar seus animais perdidos após as enchentes.
+              </p>
+            </div>
+          </div>
 
         </div>
       </section>
+ <RightClickLove />
     </main>
   );
 }
