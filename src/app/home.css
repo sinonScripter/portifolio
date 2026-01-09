@@ -30,10 +30,26 @@
 
 .hero-text h1 {
   font-size: clamp(1.8rem, 4vw, 2.4rem);
-  font-weight: 500;
+  font-weight: 900;
   line-height: 1.25;
 
 }
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.project-card {
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
 
 
 .hero-text p {
@@ -48,6 +64,7 @@
   height: auto;
   object-fit: cover;
   opacity: 0.9;
+
 }
 
 /* ===== PROJECTS ===== */

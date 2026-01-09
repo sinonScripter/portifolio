@@ -1,5 +1,8 @@
 import "./home.css";
 import RightClickLove from "../components/RightClickLove";
+import Link from "next/link";
+
+import Footer from "../components/Footer";
 
 export default function Home() {
   
@@ -30,20 +33,42 @@ export default function Home() {
         <div className="projects-grid">
 
           {/* Vyver */}
-          <div className="project-card">
-            <div className="project-media">
-              <img src="/assets/Screenshot_1.png" alt="Vyver App" />
-            </div>
+        {/* Vyver */}
+        
+<Link href="/cases/vyver" className="project-link">
+  <div
+    className="project-card"
+    style={{ viewTransitionName: "vyver-card" }}
+  >
+    <div
+      className="project-media"
+      style={{ viewTransitionName: "vyver-image" }}
+    >
+      <img src="/assets/Screenshot_1.png" alt="Vyver App" />
+    </div>
 
-            <div className="project-content">
-              <h3 className="project-title">Vyver</h3>
-              <span className="project-meta">Vyver · Shipped · 2024</span>
-              <p className="project-description">
-                Atuei no design e desenvolvimento de interfaces mobile, criando
-                fluxos e componentes focados na experiência do usuário.
-              </p>
-            </div>
-          </div>
+    <div className="project-content">
+      <h3
+        className="project-title"
+        style={{ viewTransitionName: "vyver-title" }}
+      >
+        Vyver
+      </h3>
+
+      
+
+      <span className="project-meta">Vyver · Shipped · 2024</span>
+
+      <p className="project-description">
+        Atuei no design e desenvolvimento de interfaces mobile, criando
+        fluxos e componentes focados na experiência do usuário.
+      </p>
+    </div>
+  </div>
+</Link>
+
+
+
 
           {/* Porto APP */}
           <div className="project-card">
@@ -102,6 +127,7 @@ export default function Home() {
         </div>
       </section>
  <RightClickLove />
+ 
     </main>
   );
 }

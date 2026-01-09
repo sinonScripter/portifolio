@@ -34,3 +34,35 @@ p {
 main {
   width: 100%;
 }
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.45s;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+::view-transition-old(root) {
+  animation-name: fade-out;
+}
+
+::view-transition-new(root) {
+  animation-name: fade-in;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 10;
+  }
+  to {
+    opacity: 10;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 10;
+  }
+  to {
+    opacity: 10;
+  }
+}

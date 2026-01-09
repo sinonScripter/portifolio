@@ -26,7 +26,14 @@ export default function Header() {
         <Link href="/about">About</Link>
         <Link href="/cases">Cases</Link>
         <Link href="/play">Play</Link>
-        <Link href="/resume">Resume</Link>
+<Link
+  href="https://drive.google.com/file/d/1MD_lR9Y1SufwfCNCjSgKjxO2StHt2G_z/view?usp=sharing"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Resume
+</Link>
+
       </nav>
     </header>
   );
