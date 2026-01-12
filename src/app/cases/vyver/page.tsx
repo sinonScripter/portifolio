@@ -20,6 +20,8 @@ export default function VyverCase() {
 
         <img src="public/assets/Screenshot_8.png" alt="" />
 
+        
+
         <p className="case-lead">
           Plataforma mobile criada para facilitar a experiência de pessoas em
           baladas, permitindo compra de ingressos, bebidas e interações sociais
