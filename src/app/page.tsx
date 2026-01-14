@@ -12,10 +12,11 @@ export default function Home() {
       {/* ===== HERO ===== */}
       <section className="hero">
         <div className="hero-text">
-          <h1>
-            Frontend Engineer<br />
-            crafting digital experiences
-          </h1>
+        <h1>
+         Oi, eu sou o Leo, <span className="highlight">Desenvolvedor Front-end</span><br />
+         apaixonado por animação e UX / UI
+        </h1>
+
 
           <p>
             I design and build interfaces focused on clarity, performance and
@@ -52,7 +53,7 @@ export default function Home() {
         className="project-title"
         style={{ viewTransitionName: "vyver-title" }}
       >
-        Vyver
+        Vyver 
       </h3>
 
       

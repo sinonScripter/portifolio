@@ -19,13 +19,11 @@ export default function Footer() {
           {/* Right */}
           <div className="footer-right">
             <a href="mailto:leonardo.sinon10@gmail.com">Email</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              Behance
+            <a href="https://github.com/sinonScripter" target="_blank" rel="noopener noreferrer">
+              Github
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              Dribbble
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            
+            <a href="https://www.linkedin.com/in/leonardo-moreno-4b1465242/" target="_blank" rel="noopener noreferrer">
               LinkedIn
             </a>
           </div>
@@ -51,7 +49,10 @@ export default function Footer() {
 
         /* LEFT */
         .footer-left h3 {
-          color: #3dc2ffff;
+        background: linear-gradient(90deg, #ff4d6d, #7b2ff7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
           font-size: 2rem;
           font-weight: 500;
           margin-bottom: 24px;

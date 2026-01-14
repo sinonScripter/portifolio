@@ -23,9 +23,9 @@ export default function Header() {
       </Link>
 
       <nav>
+        <Link href="/">Home</Link>
         <Link href="/about">About</Link>
-        <Link href="/cases">Cases</Link>
-        <Link href="/play">Play</Link>
+        
 <Link
   href="https://drive.google.com/file/d/1MD_lR9Y1SufwfCNCjSgKjxO2StHt2G_z/view?usp=sharing"
   target="_blank"
