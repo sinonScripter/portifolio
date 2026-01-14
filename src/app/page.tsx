@@ -19,7 +19,7 @@ export default function Home() {
 
 
           <p>
-          Eu projeto e construo interfaces focadas em clareza, desempenho e interação centrada no ser humano.</p>
+          Eu projeto e construo interfaces focadas em clareza, desempenho e interação centrada no ser humano. </p>
         </div>
 
         <div className="hero-media">
