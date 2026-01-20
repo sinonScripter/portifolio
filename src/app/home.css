@@ -115,6 +115,7 @@
   @media (max-width: 400px) {
     .hero-text p {
       color: #111;
+      margin-top: -80px;
       margin-bottom: 150px;
     }
   }
