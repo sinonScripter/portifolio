@@ -339,7 +339,9 @@ margin-top: 10vh;
   .hero-media img {
     width: 100%;
     max-width: 300px;
-    height: auto;
+    margin-top: -150px;
+    margin-bottom: 100px;
+
   }
 
   /* PROJECTS */
