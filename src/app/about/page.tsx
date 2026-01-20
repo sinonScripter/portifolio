@@ -1,4 +1,5 @@
 import "./about.css";
+import RightClickLove from "../../components/RightClickLove";
 
 export default function About() {
   return (
@@ -53,6 +54,7 @@ export default function About() {
           <img src="/assets/about-3.png" alt="" />
         </div>
       </section>
+ <RightClickLove />
 
     </main>
   );

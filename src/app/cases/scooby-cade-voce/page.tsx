@@ -1,4 +1,5 @@
 import "./scooby.css";
+import RightClickLove from "../../../components/RightClickLove";
 
 export default function ScoobyCase() {
   return (
@@ -170,7 +171,8 @@ export default function ScoobyCase() {
           diferença.
         </p>
       </section>
-
+      <RightClickLove />
+     
     </main>
   );
 }

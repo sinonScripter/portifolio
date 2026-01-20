@@ -42,9 +42,11 @@
   font-weight: 900;
   line-height: 1.25;
   margin-top: -200px;
+  
 }
 
 .hero-text p {
+  color: #111111;
   font-size: clamp(0.95rem, 2.5vw, 1.05rem);
   opacity: 0.7;
   margin-top: 16px;
@@ -65,8 +67,69 @@
 @media (min-width: 1024px) {
   .hero-media img {
     width: 460px; /* menor que antes = mais próximo */
+    
   }
 }
+
+.hero {
+  
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+  .hero {
+    
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* garante que o texto vem antes */
+  .hero-content {
+    order: 1;
+    
+    
+  }
+
+  .hero-text h1 {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    margin-bottom: 100px;
+  }
+
+  /* imagem fica abaixo do h1 */
+  .hero-media {
+    
+    order: 2;
+    margin-top: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-media img {
+    width: 100%;
+    max-width: 320px;
+
+  }
+
+  @media (max-width: 400px) {
+    .hero-text p {
+      color: #111;
+      margin-bottom: 150px;
+    }
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .hero > * {
+    
+margin-top: 10vh;
+    width: 100%;
+  }
+}
+
 
 /* Telas muito grandes */
 @media (min-width: 1440px) {

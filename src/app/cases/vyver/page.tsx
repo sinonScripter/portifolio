@@ -1,5 +1,6 @@
 import "./vyver.css";
 import Image from "next/image";
+import RightClickLove from "../../../components/RightClickLove";
 
 
 export default function VyverCase() {
@@ -102,7 +103,7 @@ export default function VyverCase() {
           foco da equipe.
         </p>
       </section>
-
+      RightClickLove
     </main>
   );
 }
