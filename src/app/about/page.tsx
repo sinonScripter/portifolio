@@ -48,11 +48,7 @@ export default function About() {
       {/* HOBBIES / EXTRAS */}
       <section className="about-gallery">
 
-        <div className="about-grid">
-          <img src="/assets/about-1.png" alt="" />
-          <img src="/assets/about-2.png" alt="" />
-          <img src="/assets/about-3.png" alt="" />
-        </div>
+        
       </section>
  <RightClickLove />
 
