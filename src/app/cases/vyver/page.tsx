@@ -58,7 +58,6 @@ export default function VyverCase() {
 
       {/* SECTION */}
       <section className="case-section">
-        <span className="case-eyebrow">Visão geral</span>
         <h2>Desafio</h2>
 
         <p>
