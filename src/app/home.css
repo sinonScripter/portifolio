@@ -126,8 +126,8 @@
    PROJECTS
    ================================================== */
 .projects-section {
-  margin-top: clamp(-80px, -8vw, -120px);
-  padding: 0 clamp(20px, 6vw, 80px);
+  margin-top: clamp(-120px, -8vw, -120px);
+  padding: 0 clamp(200px, 6vw, 80px);
 }
 
 @media (max-width: 768px) {
