@@ -5,21 +5,21 @@ import Link from "next/link";
 import Footer from "../components/Footer";
 
 export default function Home() {
-  
+
   return (
     <main className="home">
 
-      {/* ===== HERO ===== */}
+      {/* ===== home ===== */}
       <section className="hero">
         <div className="hero-text">
-        <h1>
-         Oi, eu sou o Leo, <span className="highlight">Desenvolvedor Front-end</span><br />
-         apaixonado por animação e UX / UI
-        </h1>
+          <h1>
+            Oi, eu sou o Leo, <span className="highlight">Desenvolvedor Front-end</span><br />
+            apaixonado por animação e UX / UI
+          </h1>
 
 
           <p>
-          Eu projeto e construo interfaces focadas em clareza, desempenho e interação centrada no ser humano. </p>
+            Eu projeto e construo interfaces focadas em clareza, desempenho e interação centrada no ser humano. </p>
         </div>
 
         <div className="hero-media">
@@ -32,43 +32,43 @@ export default function Home() {
         <div className="projects-grid">
 
           {/* Vyver */}
-        {/* Vyver */}
-        
-<Link href="/cases/vyver" className="project-link">
-  <div
-    className="project-card"
-    style={{ viewTransitionName: "vyver-card" }}
-  >
-    <div
-      className="project-media"
-      style={{ viewTransitionName: "vyver-image" }}
-    >
-      <img src="/assets/Screenshot_1.png" alt="Vyver App" />
-    </div>
+          {/* Vyver */}
 
-    <div className="project-content">
-      <h3
-        className="project-title"
-        style={{ viewTransitionName: "vyver-title" }}
-      >
-        Vyver 
-      </h3>
+          <Link href="/cases/vyver" className="project-link">
+            <div
+              className="project-card"
+              style={{ viewTransitionName: "vyver-card" }}
+            >
+              <div
+                className="project-media"
+                style={{ viewTransitionName: "vyver-image" }}
+              >
+                <img src="/assets/Screenshot_1.png" alt="Vyver App" />
+              </div>
 
-      
+              <div className="project-content">
+                <h3
+                  className="project-title"
+                  style={{ viewTransitionName: "vyver-title" }}
+                >
+                  Vyver
+                </h3>
 
-      <span className="project-meta">Vyver · Shipped · 2024</span>
 
-      <p className="project-description">
-        Atuei no design e desenvolvimento de interfaces mobile, criando
-        fluxos e componentes focados na experiência do usuário.
-      </p>
-    </div>
-  </div>
-            </Link>
 
-                      {/* Porto APP */}
-                      <div className="project-card">
-                      <a
+                <span className="project-meta">Vyver · Shipped · 2024</span>
+
+                <p className="project-description">
+                  Atuei no design e desenvolvimento de interfaces mobile, criando
+                  fluxos e componentes focados na experiência do usuário.
+                </p>
+              </div>
+            </div>
+          </Link>
+
+          {/* Porto APP */}
+          <div className="project-card">
+            <a
               href="https://toaki.cdf.net/auth/login"
               target="_blank"
               rel="noopener noreferrer"
@@ -92,11 +92,11 @@ export default function Home() {
                 </div>
               </div>
             </a>
-            </div>
+          </div>
 
 
           {/* ANB Club */}
-            <Link
+          <Link
             href="https://www.anbclub.com.br/"
             target="_blank"
             rel="noopener noreferrer"
@@ -118,8 +118,8 @@ export default function Home() {
             </div>
           </Link>
 
-                    {/* Scooby Doo */}
-            <Link href="/cases/scooby-cade-voce" className="project-link">
+          {/* Scooby Doo */}
+          <Link href="/cases/scooby-cade-voce" className="project-link">
             <div className="project-card">
               <div className="project-media">
                 <img src="/assets/Screenshot_13.png" alt="Scooby Doo Cadê Você" />
@@ -141,6 +141,8 @@ export default function Home() {
 
         </div>
       </section>
+      <RightClickLove />
+
     </main>
   );
 }
