@@ -27,7 +27,7 @@ export default function Header() {
         <Link href="/about">About</Link>
 
         <a
-          href="https://drive.google.com/file/d/1MD_lR9Y1SufwfCNCjSgKjxO2StHt2G_z/view?usp=sharing"
+          href="https://drive.google.com/file/d/1VgISaxxBWiByiMJL8QHE2SzJsgQ2zxaj/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
